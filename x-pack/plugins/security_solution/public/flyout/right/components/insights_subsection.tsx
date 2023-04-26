@@ -42,9 +42,8 @@ export const InsightsSubSection: React.FC<InsightsSectionProps> = ({
   'data-test-subj': dataTestSubj,
   children,
 }) => {
+  // showing the loading in this component as well as in SummaryPanel because we're hiding the entire section if no data
   const loadingDataTestSubj = `${dataTestSubj}Loading`;
-  // showing the loading in this component instead of SummaryPanel because we're hiding the entire section if no data
-
   if (loading) {
     return (
       <EuiFlexGroup justifyContent="center">

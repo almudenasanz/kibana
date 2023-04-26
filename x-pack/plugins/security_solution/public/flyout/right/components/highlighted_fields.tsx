@@ -50,7 +50,7 @@ export const HighlightedFields: FC = () => {
             eventId={eventId}
             browserFields={browserFields}
             isDraggable={false}
-            scopeId={'global'}
+            scopeId={scopeId}
             title={''}
             isReadOnly={false} // TODO: set properly
             goToTable={goToTableTab}
